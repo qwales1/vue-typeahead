@@ -3,7 +3,8 @@ var webpack = require('webpack')
 module.exports = {
   entry: './src/main.js',
   output: {
-    filename: './dist/vue-typeahead.common.js'
+    filename: './dist/vue-typeahead.common.js',
+    libraryTarget: 'umd'
   },
   externals : {
     vue: {
